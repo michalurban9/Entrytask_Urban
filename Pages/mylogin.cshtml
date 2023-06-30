@@ -1,0 +1,21 @@
+﻿@page
+@model Entrytask_Urban.Pages.myloginModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Please login.</p>
+</div>
+
+<div class="logindatas">
+    <form method="post">
+        <label>Username:</label>
+        <input id="username" name="username" />
+
+        <label>Password:</label>
+        <input id="password" name="password" />
+        <br />
+        <button id="loginbutton" type="submit" asp-page-handler="Login">Login</button>
+    </form>
+</div>
